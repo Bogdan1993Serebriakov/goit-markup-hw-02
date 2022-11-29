@@ -6,13 +6,15 @@
   --cloud: #f4f4fd;
   --cornflower: #e7e9fc;
   --white: #ffffff;
+  --button-primary: #404BBF;
 }
 
-.page {
+body {
   background-color: var(--white);
   color: var(--navy-blue);
   font-family: Roboto, sans-serif;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.02em;
+  font-size: 16px;
 }
 
 /* General classes --------------------------*/
@@ -63,13 +65,15 @@
 .list-name {
   color: var(--navy-blue);
   text-decoration: none;
-
   font-weight: 600;
   font-size: 16px;
   line-height: 1.5;
 }
 .list-name:hover,
 .list-name:focus {
+  color: var(--iris);
+}
+.current {
   color: var(--iris);
 }
 
@@ -111,10 +115,11 @@
 }
 .order-title {
   color: var(--white);
-  font-weight: 600;
+  font-weight: 700;
   font-size: 56px;
   line-height: 1;
   text-align: center;
+  letter-spacing: 0.02em;
 }
 .team {
     background-color: var(--cloud);
@@ -125,9 +130,11 @@
   background-color: black;
   color: white;
   border-radius: 4px;
-  font-weight: 600;
+  font-weight: 700;
   font-size: 16px;
   line-height: 1.2;
+  font-family: inherit;
+  letter-spacing: 0.04em;
 }
 
 /* main button */
@@ -138,9 +145,8 @@
 }
 .button.primary:hover,
 .button.primary:focus {
-  background-color: var(--cloud);
-  color: var(--navy-blue);
-  border: var(--cornflower);
+  background-color: var(--button-primary);
+  color: var(--white);
   cursor: pointer;
 }
 /* porfolio buttons */
